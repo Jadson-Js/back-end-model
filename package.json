@@ -1,0 +1,75 @@
+{
+  "name": "meetFood-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js",
+    "help": "sequelize-cli --help"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jadson-Js/meetfood-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jadson-Js/meetfood-api/issues"
+  },
+  "homepage": "https://github.com/Jadson-Js/meetfood-api#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "module-alias": "^2.2.2",
+    "mysql2": "^2.3.3",
+    "pg": "^8.7.3",
+    "sequelize": "^6.17.0",
+    "winston": "^3.6.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.4.1"
+  },
+  "_moduleAliases": {
+    "@": "src",
+    "@app": "src/app.js",
+    "@config": "config/config.js",
+    "@database/connection": "src/database/connection.js",
+    "@helpers/sendErrors": "helpers/sendErrors.js",
+    "@helpers/validResult": "helpers/validResult.js",
+    "@utils/constants": "utils/constants.js",
+    "@utils/addHateoas": "utils/addHateoas.js",
+    "@middlewares/verifyJwt": "src/api/middlewares/verifyJwt.js",
+    "@auth/permission": "src/api/middlewares/authPermission.js",
+    "@routes/login": "routes/login.routes.js",
+    "@routes/user": "routes/user.routes.js",
+    "@routes/product": "routes/product.routes.js",
+    "@routes/role": "routes/role.routes.js",
+    "@routes/permission": "routes/permission.routes.js",
+    "@routes/role-permission": "routes/role-permission.routes.js",
+    "@controllers/login": "src/api/controllers/login.controllers.js",
+    "@controllers/user": "src/api/controllers/user.controllers.js",
+    "@controllers/product": "src/api/controllers/product.controllers.js",
+    "@controllers/role": "src/api/controllers/role.controllers.js",
+    "@controllers/permission": "src/api/controllers/permission.controllers.js",
+    "@controllers/role-permission": "src/api/controllers/role-permission.controllers.js",
+    "@services/body-parser": "src/api/services/body-parser.service.js",
+    "@services/login": "src/api/services/login.service.js",
+    "@services/user": "src/api/services/user.service.js",
+    "@services/product": "src/api/services/product.service.js",
+    "@services/role": "src/api/services/role.service.js",
+    "@services/permission": "src/api/services/permission.service.js",
+    "@services/role-permission": "src/api/services/role-permission.service.js",
+    "@services/logger": "src/api/services/logger.service.js",
+    "@services/boot": "src/api/services/boot.service.js",
+    "@models": "src/api/models"
+  }
+}
